@@ -1,0 +1,77 @@
+<div id="manga-page">
+    <main id="campos-do-manga">
+        <section id="dados-gerais-do-manga">
+            <div class="poster-area">
+                <img id="capa-do-manga" src="" alt="Capa do mangá">
+                <button id="botao-continuar" class="primary-action hidden">Continuar leitura</button>
+                <button id="botao-primeiro-capitulo" class="secondary-action hidden">Começar do capítulo 1</button>
+            </div>
+
+            <div id="informacoes-e-configuracoes">
+                <span class="section-kicker">Detalhes</span>
+
+                <div id="titulo-pai" class="margem manga-title-row">
+                    <label for="titulo">Título</label>
+                    <h1 class="texto-informacoes" id="titulo">Carregando...</h1>
+                </div>
+
+                <div id="autor-pai" class="margem info-line">
+                    <label for="autor">Autor</label>
+                    <span class="texto-informacoes" id="autor">Vazio</span>
+                </div>
+
+                <div id="criado-quando-pai" class="margem info-line">
+                    <label for="criado-quando">Criado em</label>
+                    <span class="texto-informacoes" id="criado-quando">Vazio</span>
+                </div>
+
+                <div id="tipo-pai" class="margem info-line">
+                    <label for="tipo">Tipo</label>
+                    <span class="texto-informacoes" id="tipo">Vazio</span>
+                </div>
+
+                <div id="status-pai" class="margem info-line">
+                    <label for="status">Status</label>
+                    <span class="texto-informacoes" id="status">Vazio</span>
+                </div>
+
+                <div id="generos-pai" class="margem">
+                    <label for="generos">Gêneros</label>
+                    <div class="texto-informacoes chips" id="generos"></div>
+                </div>
+
+                <div id="sinopse-pai" class="margem">
+                    <label for="sinopse">Sinopse</label>
+                    <p class="texto-informacoes" id="sinopse">Vazio</p>
+                </div>
+
+                <div class="manga-actions">
+                    <label class="favorite-toggle" for="favoritado">
+                        <input type="checkbox" name="favoritado" id="favoritado">
+                        <span>Favoritar</span>
+                    </label>
+                    <button class="secondary-action" id="comentarios">Comentários</button>
+                    <button class="secondary-action" id="editar-manga">Editar mangá</button>
+                    <button class="secondary-action danger-button" id="deletar-manga">Deletar mangá</button>
+                    <button class="secondary-action" id="adicionar-manga">Adicionar mangá</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="capitulos-section">
+            <div class="section-heading">
+                <div>
+                    <span class="section-kicker">Leitura</span>
+                    <h2>Capítulos</h2>
+                </div>
+            </div>
+            <div id="container-capitulos"></div>
+        </section>
+    </main>
+
+    <aside id="ranking">
+        <span class="section-kicker">Progresso</span>
+        <h2>Informações</h2>
+        <p id="manga-progresso-texto">Abra um capítulo para salvar seu progresso.</p>
+    </aside>
+</div>

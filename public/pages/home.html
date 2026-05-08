@@ -1,0 +1,78 @@
+<div id="home-page">
+    <section class="hero-home" id="hero-home">
+        <div class="hero-content">
+            <span class="hero-badge">Catálogo escolar</span>
+            <h1>Leia, favorite e continue seus mangás</h1>
+            <p>Uma página com visual de streaming, seções por gênero, favoritos locais e progresso de leitura salvo no navegador.</p>
+            <div class="hero-actions">
+                <button class="primary-action" data-scroll="mangas">Explorar mangás</button>
+                <button class="secondary-action" data-scroll="continuar-lendo">Continuar lendo</button>
+                <button class="secondary-action" id="abrir-form-novo-manga">Adicionar mangá</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-block quick-stats" id="resumo-home">
+        <article>
+            <span id="total-mangas">0</span>
+            <p>Mangás disponíveis</p>
+        </article>
+        <article>
+            <span id="total-generos">0</span>
+            <p>Gêneros no catálogo</p>
+        </article>
+        <article>
+            <span id="total-favoritos">0</span>
+            <p>Favoritos salvos</p>
+        </article>
+        <article>
+            <span id="total-progresso">0</span>
+            <p>Leituras em progresso</p>
+        </article>
+    </section>
+
+    <section id="continuar-lendo" class="home-block hidden">
+        <div class="section-heading">
+            <div>
+                <span class="section-kicker">Progresso</span>
+                <h2>Continuar lendo</h2>
+            </div>
+        </div>
+        <div id="continuar-lista" class="special-grid"></div>
+    </section>
+
+    <section id="favoritos-home" class="home-block hidden">
+        <div class="section-heading">
+            <div>
+                <span class="section-kicker">Sua lista</span>
+                <h2>Favoritos</h2>
+            </div>
+        </div>
+        <div id="favoritos-lista" class="special-grid"></div>
+    </section>
+
+    <section id="historico-home" class="home-block hidden">
+        <div class="section-heading">
+            <div>
+                <span class="section-kicker">Últimas leituras</span>
+                <h2>Histórico</h2>
+            </div>
+        </div>
+        <div id="historico-lista" class="special-grid"></div>
+    </section>
+
+    <main id="home-content">
+        <section class="mangas-area">
+            <p class="empty-state hidden" data-search-empty>Nenhum mangá visível com esse termo de busca.</p>
+            <div id="mangas"></div>
+        </section>
+
+        <aside class="ranking" id="ranking-home">
+            <div class="ranking-card">
+                <span class="section-kicker">Ranking</span>
+                <h2>Mais vistos</h2>
+                <div id="ranking-lista"></div>
+            </div>
+        </aside>
+    </main>
+</div>

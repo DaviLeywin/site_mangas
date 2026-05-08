@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site escolar para catálogo, favoritos, histórico e leitura de mangás.">
+    <title>MangaVerse | Catálogo de mangás</title>
+    <link rel="preload" href="/SiteLivros/public/css/global.css" as="style">
+    <link rel="stylesheet" href="/SiteLivros/public/css/global.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="esqueda-nav">
+            <button class="logo" data-route="/Inicio" aria-label="Voltar para o início">MangaVerse</button>
+            <nav class="menu" aria-label="Menu principal">
+                <button class="button-menu" data-route="/Inicio">Início</button>
+                <button class="button-menu" data-scroll="mangas">Catálogo</button>
+                <button class="button-menu" data-scroll="continuar-lendo">Continuar</button>
+                <button class="button-menu" data-scroll="favoritos-home">Favoritos</button>
+                <button class="button-menu" data-scroll="historico-home">Histórico</button>
+            </nav>
+        </div>
+
+        <div class="direita-nav">
+            <form class="search" id="form-pesquisa">
+                <input id="barra-de-pesquisa" type="search" placeholder="Pesquisar mangás..." autocomplete="off">
+                <button class="lupa" type="submit" aria-label="Pesquisar">🔍</button>
+            </form>
+        </div>
+    </header>
+
+    <div id="root"></div>
+
+    <script type="module" src="/SiteLivros/public/js/app.js"></script>
+</body>
+</html>
